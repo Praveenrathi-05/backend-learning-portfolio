@@ -43,6 +43,11 @@ class Library:
             else:
                 print(book.title, "(Available)", str(book.borrow_count) + " times borrowed")
 
+class EBook(Book):
+    def __init__(self, title, author, file_size_mb):
+        super().__init__(title, author)
+        self.file_size_mb = file_size_mb
+
 library = Library()
 while True:
     print("Menu:\n1.Add Book\n2.Borrow Book\n3.Return Book\n4.View Available Books\n5.View All Books\n0.Exit")
