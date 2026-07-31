@@ -31,4 +31,4 @@ engineering → system design → career prep.
 ## 🎯 Goal
 
 Backend engineering role at a product company (Razorpay, CRED, Zepto, 
-Groww, Juspay-type companies) or remote, within [your target timeframe].
+Groww, Juspay-type companies) or remote, within 12-14 months.
