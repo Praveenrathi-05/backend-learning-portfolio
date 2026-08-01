@@ -5,6 +5,10 @@ class Book:
         self.is_borrowed = is_borrowed
         self.borrow_count = 0
 
+    def display_info(self):
+        if self.is_borrowed:
+            return f"{self.title}, (Not Available), {str(self.borrow_count)} times borrowed"
+        return f"{self.title}, (Available), {str(self.borrow_count)} times borrowed"
 class Library:
     def __init__(self):
         self.books = []
@@ -12,6 +16,9 @@ class Library:
     def add_book(self, title, author):
         book = Book(title, author)
         self.books.append(book)
+    def add_ebook(self, title, author, file_size):
+        ebook = EBook(title, author, file_size)
+        self.books.append(ebook)
 
     def borrow_book(self, title):
         for book in self.books:
@@ -38,17 +45,16 @@ class Library:
 
     def show_all_books(self):
         for book in self.books:
-            if book.is_borrowed:
-                print(book.title, "(Not Available)", str(book.borrow_count) + " times borrowed")
-            else:
-                print(book.title, "(Available)", str(book.borrow_count) + " times borrowed")
+            print(book.display_info())
 
 class EBook(Book):
     def __init__(self, title, author, file_size_mb):
         super().__init__(title, author)
         self.file_size_mb = file_size_mb
 
-library = Library()
+    def display_info(self):
+        return f"{self.title} by {self.author} [{self.file_size_mb}]MB"
+
 while True:
     print("Menu:\n1.Add Book\n2.Borrow Book\n3.Return Book\n4.View Available Books\n5.View All Books\n0.Exit")
     task = (input("Enter Task Number: "))
