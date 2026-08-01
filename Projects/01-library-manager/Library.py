@@ -54,6 +54,8 @@ class EBook(Book):
 
     def display_info(self):
         return f"{self.title} by {self.author} [{self.file_size_mb}]MB"
+    
+library = Library()
 
 while True:
     print("Menu:\n1.Add Book\n2.Borrow Book\n3.Return Book\n4.View Available Books\n5.View All Books\n0.Exit")
