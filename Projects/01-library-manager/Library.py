@@ -5,13 +5,12 @@ class Book:
         self.is_borrowed = is_borrowed
         self.borrow_count = 0
 
-    def display_info(self):
-        if self.is_borrowed:
-            return f"{self.title}, (Not Available), {str(self.borrow_count)} times borrowed"
-        return f"{self.title}, (Available), {str(self.borrow_count)} times borrowed"
+    def __str__(self):
+        status = "Borrowed" if self.is_borrowed else "Available"
+        return f"{self.title} by {self.author} [{status}]"
 class Library:
     def __init__(self):
-        self.books = []
+        self.books = [] # Library HAS-A collection of Book objects
 
     def add_book(self, title, author):
         book = Book(title, author)
@@ -45,14 +44,14 @@ class Library:
 
     def show_all_books(self):
         for book in self.books:
-            print(book.display_info())
+            print(book)
 
 class EBook(Book):
     def __init__(self, title, author, file_size_mb):
         super().__init__(title, author)
         self.file_size_mb = file_size_mb
 
-    def display_info(self):
+    def __str__(self):
         return f"{self.title} by {self.author} [{self.file_size_mb}]MB"
     
 library = Library()
