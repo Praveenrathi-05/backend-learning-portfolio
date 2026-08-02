@@ -63,7 +63,7 @@ class Hostel:
         self.residents.append(resident)
 
     def show_all_dues(self):
-        for resident in self.residents:
+        for resident in sorted(self.residents):
             print(resident)
 
     def total_collection(self):
