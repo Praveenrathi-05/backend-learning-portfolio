@@ -32,3 +32,4 @@ engineering → system design → career prep.
 
 Backend engineering role at a product company (Razorpay, CRED, Zepto, 
 Groww, Juspay-type companies) or remote, within 12-14 months.
+h
