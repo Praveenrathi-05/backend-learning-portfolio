@@ -18,12 +18,14 @@ what I've learned.
 | [Hostel Bill Manager](./projects/02-hostel-bill-manager) | Inheritance, polymorphism, composition, magic methods |
 | [Personal Expense Tracker](./projects/03-expense-tracker) | File persistence, error handling, generators, decorators |
 | [Kirana Store Inventory & Low-Stock Alert System](./projects/04-kirana-inventory-system) | Inheritance (perishable products), polymorphism, file persistence, Git branching workflow |
+| [GitHub Portfolio Analyzer](./projects/05-github-portfolio-analyzer) | Live API integration, regex file scanning, JSON persistence with delta tracking |
 
 *(this table grows every week — newest at the bottom)*
 
 ## 🛠️ Currently Learning
 
-Topic 10: Working with APIs & JSON in Python (requests, serialization) — Day 2
+Topic 11: SQL Fundamentals (queries, joins, aggregation) — the start of
+the Databases section.
 
 ## 📚 Curriculum
 
@@ -31,7 +33,7 @@ Progressing through a structured 104-topic curriculum: Python fundamentals
 → databases → DSA (structures & patterns) → CS fundamentals → backend
 engineering → system design → career prep.
 
-**Completed so far (Topics 1–9):**
+**✅ Programming Foundations complete (Topics 1–10):**
 - Python core (variables, control flow, I/O)
 - Python data structures (lists, tuples, dicts, sets, comprehensions)
 - Python functions & OOP
@@ -41,9 +43,11 @@ engineering → system design → career prep.
 - Git & version control workflows
 - Shell & command-line / editor fluency
 - Regular expressions & text processing
+- Working with APIs & JSON in Python (requests, serialization)
 
-**In progress:** Working with APIs & JSON in Python (Topic 10) — closes out the
-Programming Foundations section (Topics 1–10) before moving into Databases.
+**Now entering: Databases (Topics 11–17)** — SQL fundamentals, advanced SQL,
+normalization & indexing, transactions & concurrency, PostgreSQL, NoSQL,
+and ORMs — before moving into DSA.
 
 ## 🎯 Goal
 
