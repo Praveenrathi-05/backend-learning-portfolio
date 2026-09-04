@@ -19,13 +19,13 @@ what I've learned.
 | [Personal Expense Tracker](./projects/03-expense-tracker) | File persistence, error handling, generators, decorators |
 | [Kirana Store Inventory & Low-Stock Alert System](./projects/04-kirana-inventory-system) | Inheritance (perishable products), polymorphism, file persistence, Git branching workflow |
 | [GitHub Portfolio Analyzer](./projects/05-github-portfolio-analyzer) | Live API integration, regex file scanning, JSON persistence with delta tracking |
+| [Personal Finance Analytics Dashboard](./projects/06-finance-analytics-dashboard) | Subqueries, derived tables, CTEs, window functions, top-N-per-group |
 
 *(this table grows every week — newest at the bottom)*
 
 ## 🛠️ Currently Learning
 
-Topic 11: SQL Fundamentals (queries, joins, aggregation) — the start of
-the Databases section.
+Topic 13: Database Design (normalization & indexing)
 
 ## 📚 Curriculum
 
@@ -34,20 +34,22 @@ Progressing through a structured 104-topic curriculum: Python fundamentals
 engineering → system design → career prep.
 
 **✅ Programming Foundations complete (Topics 1–10):**
-- Python core (variables, control flow, I/O)
-- Python data structures (lists, tuples, dicts, sets, comprehensions)
-- Python functions & OOP
-- Advanced OOP (inheritance, polymorphism, magic methods, composition)
-- Python file handling & error handling
-- Iterators, generators & decorators
-- Git & version control workflows
-- Shell & command-line / editor fluency
+- Python core, data structures, functions & OOP, advanced OOP
+- File handling & error handling, iterators/generators/decorators
+- Git & version control, shell & CLI fluency
 - Regular expressions & text processing
-- Working with APIs & JSON in Python (requests, serialization)
+- Working with APIs & JSON in Python
 
-**Now entering: Databases (Topics 11–17)** — SQL fundamentals, advanced SQL,
-normalization & indexing, transactions & concurrency, PostgreSQL, NoSQL,
-and ORMs — before moving into DSA.
+**✅ Databases, in progress (Topics 11–17):**
+- SQL fundamentals — SELECT/WHERE/ORDER BY/LIKE, foreign keys, INNER JOIN,
+  GROUP BY/HAVING and aggregate functions
+- Advanced SQL — subqueries (scalar, IN, EXISTS, correlated), CTEs
+  (including chaining), window functions (PARTITION BY, RANK/DENSE_RANK/
+  ROW_NUMBER, LAG/LEAD, the top-N-per-group pattern)
+- **Now entering:** Database design — normalization (1NF/2NF/3NF) & indexing
+
+**Coming next:** transactions & concurrency, PostgreSQL in depth, NoSQL,
+ORMs — before moving into DSA.
 
 ## 🎯 Goal
 
