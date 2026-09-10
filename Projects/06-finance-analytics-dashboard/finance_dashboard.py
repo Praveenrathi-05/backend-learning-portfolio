@@ -9,7 +9,7 @@ cursor = connection.cursor()
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS categories (
     id INTEGER PRIMARY KEY,
-    name TEXT
+    name TEXT UNIQUE
 );
 """)
 cursor.execute("""
