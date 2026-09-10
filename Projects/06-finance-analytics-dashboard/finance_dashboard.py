@@ -22,6 +22,8 @@ CREATE TABLE IF NOT EXISTS expenses (
 );
 """)
 
+cursor.execute("""CREATE INDEX IF NOT EXISTS idx_expenses_category_id ON expenses(category_id)""")
+
 cursor.execute("INSERT INTO categories (name) VALUES (?)", ("Food",))
 food_id = cursor.lastrowid
 
