@@ -39,6 +39,12 @@ entertainment_id = cursor.lastrowid
 cursor.execute("INSERT INTO categories (name) VALUES (?)", ("Bills",))
 bills_id = cursor.lastrowid
 
+try:
+    cursor.execute("INSERT INTO categories (name) VALUES (?)", ("Food",))
+    connection.commit()
+except sqlite3.IntegrityError as e:
+    print(f"Insert failed: {e}")
+
 cursor.execute(
     "INSERT INTO expenses (category_id, amount, note, date) VALUES (?, ?, ?, ?)",
     (food_id, 250, "Groceries", "2025-01-03")
