@@ -20,12 +20,13 @@ what I've learned.
 | [Kirana Store Inventory & Low-Stock Alert System](./projects/04-kirana-inventory-system) | Inheritance (perishable products), polymorphism, file persistence, Git branching workflow |
 | [GitHub Portfolio Analyzer](./projects/05-github-portfolio-analyzer) | Live API integration, regex file scanning, JSON persistence with delta tracking |
 | [Personal Finance Analytics Dashboard](./projects/06-finance-analytics-dashboard) | Subqueries, derived tables, CTEs, window functions, top-N-per-group |
+| [Concurrent Seat Booking System](./projects/07-concurrent-seat-booking) | Real thread concurrency, race conditions, transactions, retry logic, lock ordering |
 
 *(this table grows every week — newest at the bottom)*
 
 ## 🛠️ Currently Learning
 
-Topic 13: Database Design (normalization & indexing)
+Topic 15: PostgreSQL in Depth
 
 ## 📚 Curriculum
 
@@ -46,10 +47,16 @@ engineering → system design → career prep.
 - Advanced SQL — subqueries (scalar, IN, EXISTS, correlated), CTEs
   (including chaining), window functions (PARTITION BY, RANK/DENSE_RANK/
   ROW_NUMBER, LAG/LEAD, the top-N-per-group pattern)
-- **Now entering:** Database design — normalization (1NF/2NF/3NF) & indexing
+- Database design — normalization (1NF/2NF/3NF, update/insertion/deletion
+  anomalies), indexing (B-Trees, EXPLAIN QUERY PLAN, composite indexes,
+  UNIQUE constraints, hash/full-text indexes, real indexing judgment)
+- Transactions, isolation levels & concurrency — ACID, dirty/non-repeatable/
+  phantom reads, isolation levels, locking, deadlocks and their structural
+  prevention, all verified under real thread concurrency
+- **Now entering:** PostgreSQL in depth
 
-**Coming next:** transactions & concurrency, PostgreSQL in depth, NoSQL,
-ORMs — before moving into DSA.
+**Coming next:** NoSQL databases, ORMs — before moving into DSA (arrays,
+hashing, linked lists, trees, graphs, and beyond).
 
 ## 🎯 Goal
 
